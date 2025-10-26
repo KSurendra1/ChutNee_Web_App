@@ -1,0 +1,22 @@
+{
+  "name": "chutnee-web-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "audit": "lighthouse http://localhost:4173 --output-path=./lighthouse-report.html --view --chrome-flags=\"--headless\""
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.0",
+    "lighthouse": "^13.0.1",
+    "vite": "^5.0.0"
+  }
+}

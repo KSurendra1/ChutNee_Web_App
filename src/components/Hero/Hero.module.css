@@ -1,0 +1,54 @@
+.hero {
+  padding: 2.5rem 1rem;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfdff 100%);
+}
+.hero__inner {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  align-items: center;
+}
+.hero__title {
+  font-size: 1.5rem;
+  line-height: 1.05;
+  margin: 0 0 0.5rem 0;
+  color: #0f172a;
+  animation: fadeSlideIn 360ms ease both;
+}
+.hero__lead {
+  margin: 0 0 1rem 0;
+  color: #334155;
+  max-width: 40ch;
+  animation: fadeSlideIn 360ms 80ms ease both;
+}
+.hero__actions { display:flex; gap:0.75rem; align-items:center }
+.btn {
+  background: #0b74de;
+  color: white;
+  border: none;
+  padding: 0.65rem 1rem;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 240ms ease, box-shadow 240ms ease;
+}
+.btn:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 8px 24px rgba(11,116,222,0.14)}
+.hero__secondary { color: #0b74de; text-decoration:none; font-weight:600 }
+.hero__visual img { width: 100%; height: auto; display:block; border-radius: 14px; box-shadow: 0 8px 24px rgba(12,18,33,0.06); animation: pop 350ms ease both }
+
+@media(min-width: 768px){
+  .hero__inner { grid-template-columns: 1fr 420px; }
+  .hero__title { font-size: 2rem }
+}
+
+/* Animations - GPU friendly transforms & opacity only */
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(8px) }
+  to { opacity: 1; transform: translateY(0) }
+}
+@keyframes pop {
+  from { opacity: 0; transform: translateY(8px) scale(0.995) }
+  to { opacity: 1; transform: translateY(0) scale(1) }
+}

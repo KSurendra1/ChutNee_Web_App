@@ -1,0 +1,15 @@
+.skeleton {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.header {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.content {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}

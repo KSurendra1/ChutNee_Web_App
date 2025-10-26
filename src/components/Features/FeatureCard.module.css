@@ -1,0 +1,16 @@
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(12,18,33,0.04);
+  transition: transform 260ms ease, box-shadow 260ms ease;
+  display:flex; flex-direction:column; gap:0.5rem;
+}
+.card:focus,
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(12,18,33,0.08);
+}
+.card__emoji { font-size: 1.5rem }
+.card__title { margin:0; font-size:1rem; color:#0f172a }
+.card__desc { margin:0; color:#475569; font-size:0.95rem }

@@ -1,0 +1,11 @@
+.features { padding: 2rem 1rem; }
+.features__inner { max-width: 980px; margin: 0 auto; }
+.features__title { font-size: 1.25rem; margin-bottom: 1rem; color:#0f172a }
+.features__grid { display:grid; grid-template-columns: 1fr; gap: 0.875rem }
+
+@media (min-width: 640px){
+  .features__grid { grid-template-columns: repeat(2, 1fr) }
+}
+@media (min-width: 1024px){
+  .features__grid { grid-template-columns: repeat(3, 1fr) }
+}
